@@ -1,0 +1,9 @@
+{
+    "name": "lemon_lyue/design-patterns",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "DesignPatterns\\": "."
+        }
+    }
+}
