@@ -3,7 +3,12 @@
 
 namespace DesignPatterns\Observer;
 
-
+/**
+ * 积分观察者
+ * 注册成功赠送积分
+ * Class IntegralObserver
+ * @package DesignPatterns\Observer
+ */
 class IntegralObserver implements ObserverInterface
 {
 

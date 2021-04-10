@@ -3,7 +3,11 @@
 
 namespace DesignPatterns\Observer;
 
-
+/**
+ * 观察者接口
+ * Interface ObserverInterface
+ * @package DesignPatterns\Observer
+ */
 interface ObserverInterface
 {
     /**

@@ -3,11 +3,6 @@ namespace DesignPatterns\Proxy;
 
 require __DIR__ . '/../../vendor/autoload.php';
 
-ini_set("display_errors", "On");
-error_reporting(E_ALL);
-ini_set("display_errors", "On");
-error_reporting(E_ALL); //显示所有错误信息
-
 class Client
 {
     /**

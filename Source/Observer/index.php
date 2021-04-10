@@ -21,7 +21,7 @@ class Client
         foreach ($this->observsers as $class) {
             $subject->attach(new $class());
         }
-        $subject->publish();
+        $subject->register();
     }
 }
 
