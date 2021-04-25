@@ -10,7 +10,6 @@ class Client
         CheckSign::class,
         CheckToken::class,
         CheckPermission::class,
-        CheckToken::class,
     ];
 
     public function run()
