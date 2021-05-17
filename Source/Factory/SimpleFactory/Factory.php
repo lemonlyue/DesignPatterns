@@ -1,7 +1,12 @@
 <?php
 
 
-namespace DesignPatterns\Factory;
+namespace DesignPatterns\Factory\SimpleFactory;
+
+use DesignPatterns\Factory\Add;
+use DesignPatterns\Factory\Div;
+use DesignPatterns\Factory\Mul;
+use DesignPatterns\Factory\Sub;
 
 /**
  * 工厂

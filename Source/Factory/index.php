@@ -2,6 +2,7 @@
 
 namespace DesignPatterns\Factory;
 
+use DesignPatterns\Factory\SimpleFactory\Factory;
 require __DIR__ . '/../../vendor/autoload.php';
 
 /**
