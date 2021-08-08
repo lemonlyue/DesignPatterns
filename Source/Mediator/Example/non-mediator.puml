@@ -1,0 +1,34 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+class Purchase
+class Sale
+class Stock
+
+Sale <|-- Purchase
+Stock <|-- Purchase
+Purchase <|-- Sale
+Stock <|-- Sale
+Sale <|-- Stock
+Purchase <|-- Stock
+
+class Purchase {
+refuseBuy()
+buy()
+}
+
+class Stock {
+Array[] $productStock
+increase()
+decrease()
+getStock()
+clearStock()
+}
+
+class Sale {
+getSales()
+sell()
+offSale()
+}
+
+@enduml
