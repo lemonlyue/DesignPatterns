@@ -1,0 +1,53 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+abstract class AbstractColleague
+abstract class AbstractMediator
+class ConcreteMediator
+class Purchase
+class Sale
+class Stock
+
+AbstractColleague <|-- Purchase
+AbstractColleague <|-- Sale
+AbstractColleague <|-- Stock
+
+AbstractMediator <|-- ConcreteMediator
+ConcreteMediator <|-- Purchase
+ConcreteMediator <|-- Sale
+ConcreteMediator <|-- Stock
+
+abstract class AbstractColleague {
+AbstractMediator $mediator
+setMediator()
+}
+
+abstract class AbstractMediator {
+execute()
+setColleague()
+}
+
+class ConcreteMediator {
+execute()
+}
+
+class Purchase {
+refuseBuy()
+buy()
+}
+
+class Stock {
+Array[] $productStock
+increase()
+decrease()
+getStock()
+clearStock()
+}
+
+class Sale {
+getSales()
+sell()
+offSale()
+}
+
+@enduml
